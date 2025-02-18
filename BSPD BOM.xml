@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="BSPD BOM.xsl"?>
+<!DOCTYPE GRID[
+  <!ELEMENT GRID (BANDS, COLUMNS, ROWS*)>
+  <!ATTLIST GRID ExportVersion CDATA #REQUIRED>
+  <!ELEMENT BANDS (BAND*)>
+  <!ELEMENT BAND EMPTY>
+  <!ATTLIST BAND Index CDATA #REQUIRED>
+  <!ATTLIST BAND Caption CDATA #IMPLIED>
+  <!ELEMENT COLUMNS (COLUMN*)>
+  <!ELEMENT COLUMN EMPTY>
+  <!ATTLIST COLUMN Name CDATA #REQUIRED>
+  <!ATTLIST COLUMN Caption CDATA #IMPLIED>
+  <!ATTLIST COLUMN Index CDATA #REQUIRED>
+  <!ATTLIST COLUMN BandIndex CDATA #REQUIRED>
+  <!ATTLIST COLUMN RowIndex CDATA #REQUIRED>
+  <!ATTLIST COLUMN ColIndex CDATA #REQUIRED>
+  <!ATTLIST COLUMN Width CDATA #IMPLIED>
+  <!ELEMENT GROUP (GROUP*, ROW*)>
+  <!ATTLIST GROUP GroupText CDATA #IMPLIED>
+  <!ELEMENT ROWS (ROW*)>
+  <!ELEMENT ROW EMPTY>
+  <!ATTLIST ROW Comment CDATA #IMPLIED>
+  <!ATTLIST ROW Description CDATA #IMPLIED>
+  <!ATTLIST ROW Designator CDATA #IMPLIED>
+  <!ATTLIST ROW Footprint CDATA #IMPLIED>
+  <!ATTLIST ROW LibRef CDATA #IMPLIED>
+  <!ATTLIST ROW Quantity CDATA #IMPLIED>
+]>
+<GRID ExportVersion="1.0">
+  <BANDS>
+    <BAND Index="0" Caption="" />
+  </BANDS>
+  <COLUMNS>
+    <COLUMN Name="Comment" Caption="Comment" Index="0" BandIndex="0" RowIndex="0" ColIndex="0" Width="120" />
+    <COLUMN Name="Description" Caption="Description" Index="1" BandIndex="0" RowIndex="0" ColIndex="1" Width="120" />
+    <COLUMN Name="Designator" Caption="Designator" Index="2" BandIndex="0" RowIndex="0" ColIndex="2" Width="120" />
+    <COLUMN Name="Footprint" Caption="Footprint" Index="3" BandIndex="0" RowIndex="0" ColIndex="3" Width="120" />
+    <COLUMN Name="LibRef" Caption="LibRef" Index="4" BandIndex="0" RowIndex="0" ColIndex="4" Width="120" />
+    <COLUMN Name="Quantity" Caption="Quantity" Index="5" BandIndex="0" RowIndex="0" ColIndex="5" Width="120" />
+  </COLUMNS>
+  <ROWS>
+    <ROW Comment="GRM21BR60J107ME15K" Description="0805 100 uF 6.3 V Â±20% Tolerance X7S Multilayer Ceramic Chip Capacitor" Designator="C1" Footprint="CAPC2012X145N" LibRef="GRM21BR60J107ME15K" Quantity="1" />
+    <ROW Comment="10uF" Description="WCAP-CSGP Multilayer Ceramic Chip Capacitor, General Purpose, size 2220, X7R Class II, 10uF, 100VDC" Designator="C2" Footprint="WCAP-CSGP_2220_L5.7W5H2.8" LibRef="885012214006" Quantity="1" />
+    <ROW Comment="10nF" Description="WCAP-CSGP Multilayer Ceramic Chip Capacitor, General Purpose, size 1812, X7R, 10nF, 50VDC" Designator="C3" Footprint="WCAP-CSGP_1812_L4.5W3.2H1.25" LibRef="885012210019" Quantity="1" />
+    <ROW Comment="Diode" Description="Default Diode" Designator="D1" Footprint="SMC" LibRef="Diode" Quantity="1" />
+    <ROW Comment="Kingbright Green LED, 70 mcd 120 ° 0805" Description="Kingbright Green LED, 70 mcd 120 ° 0805" Designator="D2" Footprint="LED1913X12NGREEN" LibRef="Kingbright Green LED, 70 mcd 120 ° 0805" Quantity="1" />
+    <ROW Comment="SLA-12VDC-SL-C" Description="SUBMINATURE HIGH POWER RELAY" Designator="K1" Footprint="RELAY_SLA-12VDC-SL-C" LibRef="SLA-12VDC-SL-C" Quantity="1" />
+    <ROW Comment="12v Header" Description="Header, 2-Pin" Designator="P1" Footprint="HDR1X2" LibRef="Header 2" Quantity="1" />
+    <ROW Comment="5v Header" Description="Header, 2-Pin" Designator="P2" Footprint="HDR1X2" LibRef="Header 2" Quantity="1" />
+    <ROW Comment="Sensors Header" Description="Header, 2-Pin" Designator="P3" Footprint="HDR1X2" LibRef="Header 2" Quantity="1" />
+    <ROW Comment="BSPD out" Description="Header, 2-Pin" Designator="P4" Footprint="HDR1X2" LibRef="Header 2" Quantity="1" />
+    <ROW Comment="NPN" Description="NPN Bipolar Transistor" Designator="Q1, Q2, Q3, Q4" Footprint="TO-226-AA" LibRef="NPN" Quantity="4" />
+    <ROW Comment="ERJU08J274V" Description="1206 anti-sulfurated resistor 1206 Anti-Sulfurated" Designator="R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16, R17, R18, R19" Footprint="RES_ERJU08J274V" LibRef="ERJU08J274V" Quantity="19" />
+    <ROW Comment="LM358PSR" Description="General Purpose Amplifier 2 Circuit 8-SO" Designator="U1, U2, U5, U6" Footprint="SOIC127P780X200-8N" LibRef="LM358PSR" Quantity="4" />
+    <ROW Comment="CLOCK-NE555DR" Description="Single Precision Timer" Designator="U3" Footprint="SOIC8-1.27-5X4MM" LibRef="CLOCK-NE555DR(SOIC8)" Quantity="1" />
+    <ROW Comment="SN74HCS4075QDRQ1" Description="No Description Available" Designator="U4" Footprint="SOIC14_D_TEX" LibRef="SN74HCS4075QDRQ1" Quantity="1" />
+  </ROWS>
+</GRID>
